@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fizetési adatok bekérése</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-2">Fizetési adatok bekérése</h1>
+    <!--Form-->
+    <form class="container mt-5" id="form" autocomplete="off">
+      <div class="mb-3 row justify-content-between">
+        <div class="col-md-6" id="emailDiv">
+          <label class="form-label">Email cím</label>
+          <input type="text" class="form-control" id="email" />
+        </div>
+        <div class="col-md-6" id="dateDiv">
+          <label class="form-label">Dátum</label>
+          <input type="text" class="form-control date" id="datepicker" />
+        </div>
+      </div>
+      <div class="mb-3 row justify-content-between align-items-center">
+        <div class="col-md-4" id="adoDiv">
+          <label class="form-label">Adó százalék (%)</label>
+          <input type="text" class="form-control" id="adoszazalek" disabled />
+        </div>
+        <div class="col-md-4" id="bruttoDiv">
+          <label class="form-label">Bruttó Ár (pl.123456.78)</label>
+          <input type="text" class="form-control" id="bruttoar" />
+        </div>
+        <div class="form-check col-md-3 mt-4">
+          <input class="form-check-input mx-1" type="checkbox" value="" id="adomentes" checked />
+          <label class="form-check-label">Adómentes</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id="submit">Mentés</button>
+    </form>
+  </body>
+</html>
